@@ -76,6 +76,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        navigationView.setCheckedItem(R.id.nav_home);
     }
 
     @Override
@@ -169,6 +171,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     // I put the onclick method here because the xml needs to use a method from the main activity, not a fragment
     public void onclick(View v){
+        navigationView.setCheckedItem(R.id.nav_predictor);
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
@@ -184,6 +187,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void displayContact(View v){
+        navigationView.setCheckedItem(R.id.nav_contact);
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override

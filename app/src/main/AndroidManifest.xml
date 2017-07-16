@@ -5,7 +5,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/extremelightcropped"
+        android:icon="@mipmap/ic_logo"
         android:label="Box Office Predictor"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
