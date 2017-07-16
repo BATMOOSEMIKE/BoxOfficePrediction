@@ -64,7 +64,7 @@ public class ContactFragment extends Fragment {
                 Intent sendEmail = new Intent(android.content.Intent.ACTION_SEND);
 
                 sendEmail.setType("plain/text");
-                sendEmail.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"michael.he2001@gmail.com"});
+                sendEmail.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"zenithstudiocontact@gmail.com"});
                 sendEmail.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
                 sendEmail.putExtra(android.content.Intent.EXTRA_TEXT, message);
 

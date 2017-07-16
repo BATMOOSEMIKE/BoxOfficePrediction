@@ -78,7 +78,7 @@
         android:id="@+id/emailLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="michael.he2001@gmail.com"
+        android:text="zenithstudiocontact@gmail.com"
         android:textColor="#bc89e7"
         android:textStyle="italic"
         android:layout_below="@+id/textView7"
