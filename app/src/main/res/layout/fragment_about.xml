@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zenithstudios.michael.boxofficepredictor.AboutFragment"
+    android:background="@drawable/seats">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/michael"
+        app:border_color="#FF000000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_below="@id/profile_image"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/view"
+        android:layout_below="@id/view"
+        android:layout_marginTop="20dp"
+        android:text="App created by"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Michael He"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="App version: v1.0"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/emailLink"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/contactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple"
+        android:clickable="true"
+        android:onClick="displayContact"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Contact"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView8"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:id="@+id/emailLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="michael.he2001@gmail.com"
+        android:textColor="#bc89e7"
+        android:textStyle="italic"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:clickable="true"/>
+
+
+</RelativeLayout>

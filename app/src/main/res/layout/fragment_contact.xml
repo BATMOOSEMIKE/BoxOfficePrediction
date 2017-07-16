@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:background="@drawable/prettycamera">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:text="@string/contact_form_subject"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/your_subject"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColor="@color/colorWhite"/>/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="3dp"
+                android:text="@string/contact_form_message"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/your_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:height="220dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:textSize="14sp"
+                android:textColor="@color/colorWhite"/>/>
+
+            <Button
+                android:id="@+id/emailSender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="Send Email"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:background = "@drawable/ripple"
+                android:layout_marginTop="40dp"/>
+        </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
