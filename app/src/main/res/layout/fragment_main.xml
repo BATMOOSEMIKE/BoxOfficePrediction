@@ -4,6 +4,7 @@
     android:background="@drawable/blurrypopcorn"
     tools:context="com.zenithstudios.michael.boxofficepredictor.MainFragment">
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
